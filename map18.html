@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Conceptual - Estilo J.A.R.V.I.S.</title>
+    <style>
+        body {
+            background-color: black;
+            font-family: Arial, sans-serif;
+            color: cyan;
+            text-align: center;
+        }
+
+        h1 {
+            text-shadow: 0px 0px 10px cyan;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 50px;
+        }
+
+        .menu {
+            background-color: rgba(0, 255, 255, 0.1);
+            border: 2px solid cyan;
+            padding: 15px;
+            border-radius: 10px;
+            cursor: pointer;
+            position: relative;
+            transition: 0.3s;
+            width: 250px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .menu:hover {
+            background-color: rgba(0, 255, 255, 0.3);
+            text-shadow: 0px 0px 10px cyan;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 280px;
+            background-color: rgba(0, 255, 255, 0.1);
+            border: 2px solid cyan;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .submenu p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        .menu:hover .submenu {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Mapa Conceptual: El Papel de la Educación en Chomsky</h1>
+
+    <div class="container">
+        <div class="menu">
+            Naturaleza del Ser Humano
+            <div class="submenu">
+                <p>- Condiciones igualitarias</p>
+                <p>- La educación debe promover el desarrollo de la naturaleza humana sin restricciones sociales</p>
+            </div>
+        </div>
+
+        <div class="menu">
+            El Papel del Educador y la Educación
+            <div class="submenu">
+                <p>- Crear ciudadanos sabios en una comunidad libre</p>
+                <p>- Forjar pensamiento crítico</p>
+                <p>- Los educadores deben facilitar el pensamiento crítico</p>
+            </div>
+        </div>
+
+        <div class="menu">
+            Enfoque Humanista vs Mercantilista
+            <div class="submenu">
+                <p>- El humanista fomenta la autonomía</p>
+                <p>- El mercantilista crea una sociedad basada en el consumo</p>
+                <p>- Es necesario fomentar un equilibrio entre el enfoque humanista y mercantilista</p>
+            </div>
+        </div>
+
+        <div class="menu">
+            La Educación en la Democracia Actual
+            <div class="submenu">
+                <p>- La educación actual está limitada</p>
+                <p>- Influencia de la política y organizaciones externas</p>
+                <p>- Una verdadera democracia debe articularse con una educación que forje ciudadanos críticos</p>
+            </div>
+        </div>
+
+        <div class="menu">
+            Universidad y Pensamiento Libre
+            <div class="submenu">
+                <p>- Proporcionar pensamiento crítico</p>
+                <p>- Rol en la lucha por cambios sociales</p>
+                <p><strong>La universidad tiene una responsabilidad en los cambios sociales</strong></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
